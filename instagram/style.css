@@ -101,6 +101,18 @@ body {
     padding: 10px;
 }
 
+.ou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: grey;
+    font-weight: bold;  
+    margin: 0 18px;
+    font-size: 13px;
+}
+
 .face {
      height: 1.5rem;
      width: 13rem;
@@ -139,6 +151,14 @@ body {
     margin-left: 8px;
 }
 
+.ou::before, .ou::after {
+    content: '';
+    width: 117px;
+    height: 1px;
+    background: currentColor;
+    display: block;
+    margin: 20px auto;
+}
 
 @media (max-width: 1024px) {
     .instagram {
